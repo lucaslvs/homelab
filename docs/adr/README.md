@@ -8,6 +8,7 @@ Significant decisions of this homelab are recorded here using [MADR](https://adr
 | ADR | Title | Status |
 |-----|-------|--------|
 | [0001](0001-record-architecture-decisions-using-madr.md) | Record architecture decisions using MADR | accepted |
+| [0002](0002-use-english-as-repository-language.md) | Use English as the repository language | accepted |
 
 ## Adding a new ADR
 

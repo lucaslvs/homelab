@@ -1,0 +1,8 @@
+# OpenTofu: state and plans can hold secrets in plain text (ADR-0005)
+*.tfstate
+*.tfstate.*
+*.tfplan
+.terraform/
+
+# macOS (workstation)
+.DS_Store

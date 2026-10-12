@@ -124,9 +124,9 @@ docs(adr): add ADR-0004 shared vocabulary
 
 **Scopes**
 
-Scopes are optional and free-form for now. A closed list of allowed scopes will be defined once the
-repository structure is decided, since scopes are expected to mirror its areas/layers. That decision will
-update this convention and the linter configuration.
+Scopes are optional. The closed list of allowed scopes mirrors the areas of the repository and is defined
+in [ADR-0006](0006-define-a-closed-list-of-commit-scopes.md), following the repository structure decided
+in [ADR-0005](0005-organize-the-repository-by-lifecycle-stage.md).
 
 **Enforcement**
 

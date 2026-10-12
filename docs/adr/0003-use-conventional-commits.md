@@ -106,19 +106,19 @@ The scopes below are illustrative; they are not the closed list of scopes (see *
 
 ```
 feat(bootstrap): configure ssh key access on the host
-feat(incus): add k3s server guest
+feat(incus): add k3s control plane guest
 fix(ansible): wait for cloud-init before configuring guests
 refactor(ansible): extract common role for guest hardening
 chore(deps): upgrade k3s to v1.31
 build: upgrade incus opentofu provider
 style: apply tofu fmt
-docs(adr): add ADR-0004 git hook manager
+docs(adr): add ADR-0004 shared vocabulary
 ```
 
 | Don't | Why | Do |
 |-------|-----|----|
 | `update stuff` | No type, says nothing | `fix(k3s): ...` with the actual change |
-| `feat: Added K3s.` | Past tense, capitalized, trailing period | `feat(incus): add k3s server guest` |
+| `feat: Added K3s.` | Past tense, capitalized, trailing period | `feat(incus): add k3s control plane guest` |
 | `feat: add grafana and fix k3s upgrade` | Two logical changes | Two commits: a `feat` and a `fix` |
 | `build: upgrade k3s to v1.31` | K3s runs in the environment, not repository tooling | `chore(deps): upgrade k3s to v1.31` |
 

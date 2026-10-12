@@ -9,6 +9,7 @@ Significant decisions of this homelab are recorded here using [MADR](https://adr
 |-----|-------|--------|
 | [0001](0001-record-architecture-decisions-using-madr.md) | Record architecture decisions using MADR | accepted |
 | [0002](0002-use-english-as-repository-language.md) | Use English as the repository language | accepted |
+| [0003](0003-use-conventional-commits.md) | Use Conventional Commits | accepted |
 
 ## Adding a new ADR
 

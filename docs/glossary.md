@@ -60,11 +60,24 @@ Bringing a reachable machine (host or guest) to its desired state, e.g. with Ans
 Creating infrastructure resources declaratively, e.g. with OpenTofu: Incus networks, profiles and
 guests.
 
+### Delivery
+
+Continuously applying the desired state of workloads inside the cluster from Git, e.g. with Argo CD
+(GitOps). The `delivery/` stage of the repository.
+
 ### Day 0 / Day 1 / Day 2
 
 Lifecycle stages as commonly used in operations: design and planning (Day 0); installation, deployment
 and initial configuration, including host bootstrap (Day 1); ongoing operation, such as monitoring,
 upgrades, backups and recovery (Day 2).
+
+## Repository
+
+### Stage
+
+A top-level area of the repository, named by its role in the lifecycle (bootstrap, provisioning,
+configuration, delivery), not by the tool that implements it. See
+[ADR-0005](adr/0005-organize-the-repository-by-lifecycle-stage.md).
 
 ## Term mapping across tools
 

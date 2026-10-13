@@ -13,6 +13,7 @@ Significant decisions of this homelab are recorded here using [MADR](https://adr
 | [0004](0004-adopt-a-shared-vocabulary-for-machines-and-roles.md) | Adopt a shared vocabulary for machines and roles | accepted |
 | [0005](0005-organize-the-repository-by-lifecycle-stage.md) | Organize the repository by lifecycle stage | accepted |
 | [0006](0006-define-a-closed-list-of-commit-scopes.md) | Define a closed list of commit scopes | accepted |
+| [0007](0007-contribute-through-pull-requests-with-squash-merge.md) | Contribute through pull requests with squash merge | accepted |
 
 ## Adding a new ADR
 

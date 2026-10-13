@@ -184,11 +184,14 @@ A `CHANGELOG.md` is generated from the commit history.
 * Types reference: <https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional>
 * Follow-up decisions (separate ADRs):
   * Git hook manager for the workstation (it will also run formatters/linters such as `tofu fmt`,
-    `ansible-lint`, `yamllint`)
+    `ansible-lint`, `yamllint`): see [ADR-0010](0010-manage-git-hooks-with-lefthook.md)
   * Commit message linter and CI implementation, including whether `!` can be enforced to require a
-    `BREAKING CHANGE:` footer
-  * Changelog generator (e.g. git-cliff, release-please) and whether to tag versions/milestones
+    `BREAKING CHANGE:` footer: see [ADR-0011](0011-lint-commit-messages-with-commitlint.md), which
+    enforces it
+  * Changelog generator (e.g. git-cliff, release-please) and whether to tag versions/milestones: see
+    [ADR-0012](0012-version-and-release-with-release-please.md)
   * Closed list of scopes, after the repository structure ADR, which must include `deps` (used by
-    `chore(deps)`)
+    `chore(deps)`): see [ADR-0006](0006-define-a-closed-list-of-commit-scopes.md)
   * Contribution workflow (direct pushes vs pull requests, merge strategy), which determines whether CI
-    lints individual commits or pull request titles
+    lints individual commits or pull request titles: see
+    [ADR-0007](0007-contribute-through-pull-requests-with-squash-merge.md)

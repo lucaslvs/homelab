@@ -78,8 +78,8 @@ check that the scope matches the changed paths.
 
 ### Confirmation
 
-* The commit message linter (chosen in the workstation tooling ADR) is configured with exactly the scopes
-  above and rejects any other scope
+* The commit message linter (chosen in [ADR-0011](0011-lint-commit-messages-with-commitlint.md)) is
+  configured with exactly the scopes above and rejects any other scope
 * Optionally, a CI check verifies that a commit's scope matches the paths it changes
 
 ## Pros and Cons of the Options

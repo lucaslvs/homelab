@@ -68,8 +68,8 @@ without credentials.
   Inside a stage, the tool's native layout applies (e.g. `inventory/`, `roles/` for Ansible), and the
   vocabulary appears in the names of files, groups and resources.
 * The order of execution is **not** encoded in directory names (it is not linear: configuration runs
-  before and after provisioning). It lives in a task runner (chosen in the workstation tooling ADR) and
-  in the stage READMEs.
+  before and after provisioning). It lives in a task runner (chosen in [ADR-0009](0009-run-tasks-with-mise.md))
+  and in the stage READMEs.
 
 ```
 homelab/
@@ -79,7 +79,7 @@ homelab/
 ├── delivery/             # workloads inside the cluster
 ├── docs/                 # cross-stage documentation
 ├── README.md             # includes the stage table below
-└── …                     # files that tools require at the root (.github/, .mise.toml, task runner…)
+└── …                     # files that tools require at the root (.github/, mise.toml, task runner…)
 ```
 
 The root `README.md` must contain a table mapping each stage to its purpose and current tool. It is part
@@ -96,7 +96,7 @@ General rules:
 
 * Every stage has a `README.md` stating what it does and how to run it.
 * The root contains only the stage directories, `docs/`, and files that tools require at the root (by
-  their own convention, e.g. `.github/`, `.editorconfig`, `.mise.toml`, git hook and task runner
+  their own convention, e.g. `.github/`, `.editorconfig`, `mise.toml`, git hook and task runner
   configuration). There is no `workstation/` directory.
 * There are no environment directories (`dev/`, `prod/`) and no `clusters/` directory: the homelab has
   one environment and one cluster. Adding either requires a new ADR.
@@ -326,5 +326,6 @@ and there is no guest layer.
 * Argo CD best practices (config vs source code repositories):
   <https://argo-cd.readthedocs.io/en/stable/user-guide/best_practices/>
 * Follow-up decisions (separate ADRs): secrets strategy; OpenTofu state backend; workstation tooling,
-  including the task runner; format of workload directories in `delivery/`; location of the
-  architecture overview; guest naming scheme
+  including the task runner (see [ADR-0008](0008-manage-workstation-tool-versions-with-mise.md),
+  [ADR-0009](0009-run-tasks-with-mise.md) and [ADR-0010](0010-manage-git-hooks-with-lefthook.md)); format
+  of workload directories in `delivery/`; location of the architecture overview; guest naming scheme

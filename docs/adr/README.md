@@ -14,6 +14,7 @@ Significant decisions of this homelab are recorded here using [MADR](https://adr
 | [0005](0005-organize-the-repository-by-lifecycle-stage.md) | Organize the repository by lifecycle stage | accepted |
 | [0006](0006-define-a-closed-list-of-commit-scopes.md) | Define a closed list of commit scopes | accepted |
 | [0007](0007-contribute-through-pull-requests-with-squash-merge.md) | Contribute through pull requests with squash merge | accepted |
+| [0008](0008-manage-workstation-tool-versions-with-mise.md) | Manage workstation tool versions with mise | accepted |
 
 ## Adding a new ADR
 

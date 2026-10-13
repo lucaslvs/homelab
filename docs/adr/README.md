@@ -18,6 +18,7 @@ Significant decisions of this homelab are recorded here using [MADR](https://adr
 | [0009](0009-run-tasks-with-mise.md) | Run tasks with mise | accepted |
 | [0010](0010-manage-git-hooks-with-lefthook.md) | Manage git hooks with lefthook | accepted |
 | [0011](0011-lint-commit-messages-with-commitlint.md) | Lint commit messages with commitlint | accepted |
+| [0012](0012-version-and-release-with-release-please.md) | Version and release with release-please | accepted |
 
 ## Adding a new ADR
 
